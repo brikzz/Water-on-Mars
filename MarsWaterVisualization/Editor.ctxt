@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Editor
+comment0.text=\ \n\ This\ PhotoshopDriver\ is\ where\ you\ will\ write\ the\ commands\ to\ actually\ load,\n\ edit,\ and\ save\ your\ images.\ It\ contains\ a\ couple\ of\ utility\ methods\ that\ will\ be\ \n\ used\ to\ handle\ the\ file\ reading\ and\ writing,\ which\ you\ shouldn't\ change,\ but\ the\n\ main\ method\ is\ yours\ to\ use\ however\ you\ need.\n
+comment1.params=
+comment1.target=void\ main()
+comment2.params=filename
+comment2.target=ColorImage\ loadImage(java.lang.String)
+comment2.text=\n\ Takes\ an\ image\ filename\ (e.g.\ "photo.jpg")\ and\ converts\ it\ to\ a\ ColorImage.\n
+comment3.params=c
+comment3.target=int\ toARGB(Color)
+comment3.text=\ \n\ Converts\ the\ R,G,B\ values\ of\ a\ Color\ to\ ARGB\ format,\ which\ is\ required\ by\ the\ BufferedImage\n\ file\ writing\ class.\n
+comment4.params=packed
+comment4.target=Color\ fromARGB(int)
+comment4.text=\ \n\ Takes\ a\ packed\ int\ in\ ARGB\ format,\ which\ we\ get\ from\ the\ BufferedImage\ file\ writing\ class,\n\ and\ turns\ it\ into\ a\ Color\ object\ by\ separating\ out\ its\ R,G,B\ values.\n
+comment5.params=filename\ image
+comment5.target=void\ saveImage(java.lang.String,\ ColorImage)
+comment5.text=\n\ Reads\ in\ each\ pixel\ from\ a\ ColorImage,\ and\ then\ writes\ the\ image\ out\ to\ a\ file.\n\ Supports\ PNG\ and\ JPG\ file\ types.\n
+comment6.params=
+comment6.target=void\ saveTestImage()
+comment6.text=\n\ Simpler\ version\ of\ the\ saveImage\ method\ for\ testing.\ Doesn't\ require\ integration\ with\ ColorImage,\ just\ writes\n\ a\ gradient\ of\ colors\ out\ to\ an\ image\ to\ make\ sure\ the\ BufferedImage,\ ImageIO,\ and\ File\ libraries\ are\ working\n\ as\ expected.\n
+numComments=7
